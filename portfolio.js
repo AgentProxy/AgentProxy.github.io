@@ -1,6 +1,17 @@
 let currentIndex = 0;
 
 var views = {
+    showMenu: function(){
+        var menu = document.querySelector('ul');
+        if (menu.className === "passive") {
+            menu.className = "active";
+            // buttons.className = "responsive"
+            // buttons.display = "block";
+        } else {
+            menu.className = "passive";
+            // buttons.className = "buttons"
+        }
+    },
     setupEventListeners: function(){
         
     },
@@ -37,38 +48,27 @@ var views = {
         projectDescription.innerHTML = project.description;
         status = project.status;
         
-
-
-        if(status == "Deployed"){
-            iframe.style.display = 'block'
-            img.style.display = 'none'; 
-            iframe.src = project.url;
-        }
-        else{
-            img.style.display = 'block';
-            iframe.src = "";
-            iframe.style.display = 'none';
-            // image.src = project.url;
-        }
+        img.style.display = 'block';
+        img.src = project.url;
 
     }
 }
 
 var projects = [
     {
+        name: "Tiyangge Dash",
+        dateCreated: "2016",
+        status: "Local",
+        language: "Java",
+        description: "A Java game created for the utility of array structures.",
+        url:"resources/images/tiyanggedash.jpg",
+    },
+    {
         name: "King's Cup",
         dateCreated: "2015",
         status: "Local",
         language: "C",
         description: "A terminal-based game that was made to mimic the King's Cup drinking game without the cards."
-    },
-    //tiyangge dash
-    {
-        name: "Tiyangge Dash",
-        dateCreated: "2016",
-        status: "Local",
-        language: "Java",
-        description: "A Java game created for the utility of array structures."
     },
     {
         name: 'Grinding Gary',
