@@ -16,7 +16,8 @@
     text-align: center;
     color: white;
     display: block;
-    background-image: url("resources/images/me-intro.jpg");
+    /* background-image: url("resources/images/me-intro.jpg"); */
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center top;
