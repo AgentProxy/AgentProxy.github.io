@@ -94,5 +94,5 @@ var projects = [
 ];
 
 
-views.showProject(0);
+// views.showProject(0);
 console.log(window.innerWidth,window.innerHeight)
