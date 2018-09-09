@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+p{
+    font-size: 1.3vw;
+}
+
 
 .body-box-1{
     order:1;
@@ -79,13 +83,13 @@ nav{
     text-align: center;
     color: white;
     display: block;
-    background-image: url("resources/images/me-intro.jpg");
+    background-image: url("resources/images/me-intro2.jpg");
     background-color: black;
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat; 
-    background-position: center top;
+    background-position: center ;
     background-attachment: scroll;
-    background-size: 100%;
+    /* background-size: 100%; */
     position: relative;
 }
 
@@ -159,9 +163,6 @@ nav{
 .about-box-2{
     order: 2;
     width: 50%;
-    /* flex-grow: 2; */
-    /* word-wrap: break-word;  */
-    /* width: 40%; */
 }
 
 .about-box-2 > h1{
@@ -170,7 +171,6 @@ nav{
 
 .about-box-3{
     order:3;
-    /* flex-grow: 5; */
 }
 
 /* Education */
