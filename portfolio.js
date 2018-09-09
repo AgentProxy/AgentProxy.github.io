@@ -1,15 +1,18 @@
 let currentIndex = 0;
-
 var views = {
     showMenu: function(){
-        var menu = document.querySelector('ul');
+        var ul = document.getElementById('nav-links')
+        var menu = document.querySelector(ul);
+        var sections = document.getElementById('sections');
+        
+        
         if (menu.className === "passive") {
             menu.className = "active";
-            // buttons.className = "responsive"
-            // buttons.display = "block";
+            // sections.style.paddingTop = "260px";
         } else {
             menu.className = "passive";
-            // buttons.className = "buttons"
+            
+            // sections.style.paddingTop = "65px";
         }
     },
     setupEventListeners: function(){
@@ -18,7 +21,7 @@ var views = {
     showSection(section){
         document.getElementById(section).scrollIntoView({
             behavior: 'smooth',
-            block: 'start'
+            block: 'nearest'
         });
     },
     showProject(index){
@@ -94,5 +97,5 @@ var projects = [
 ];
 
 
-// views.showProject(0);
-console.log(window.innerWidth,window.innerHeight)
+views.showProject(0);
+

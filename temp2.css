@@ -1,0 +1,380 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.body-box-1{
+    order:1;
+}
+
+.body-box-2{
+    order:2;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw
+}
+
+nav li:hover{
+    background-color: grey
+}
+
+#menu-icon{
+    width: 60px;
+    float: right;
+    margin-right: 10px;
+    display: none;
+    position: relative;
+}
+
+#my-logo{
+    width: 70px;
+    float: left;
+}
+
+nav{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(41,43,44);
+    display: block;
+    z-index: 1;
+}
+
+#nav-links{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    color: white;
+}
+
+/* Sections */
+
+#sections{
+    padding-top: 78px;
+}
+
+#sections > #home{
+    height: 100vh;
+}
+
+/* Home */
+#home{
+    text-align: center;
+    color: white;
+    display: block;
+    background-image: url("resources/images/me-intro.jpg");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: 100%;
+    position: relative;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.home-box-1{
+    order: 1;
+    
+}
+
+#intro{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    /* float: right; */
+}
+
+#intro > h1{
+    font-size: 2.5vw;
+}
+
+/* About Me */
+
+#about-me{
+    background-image: url('resources/images/about-me-background.png');
+    position: relative;
+    background-position: right center;
+    height: 87vh;
+    color: white;
+}
+
+#about-me > h1{
+    position: absolute;
+    top: 30%;
+    /* left: 60%;
+    margin:0; */
+    /* right: 50%; */
+
+}
+
+#about-me > p{
+    word-wrap: break-word;
+}
+
+#my-image{
+    width: 70%;
+    height: 60%;
+    border-radius: 100%;
+}
+
+.about-me-container{
+    position: relative;
+    top: 25%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.about-box-1{
+    order: 1;
+    /* flex-grow: 3; */
+    width: 40%;
+    margin-left: 5%;
+}
+
+.about-box-2{
+    order: 2;
+    width: 50%;
+    /* flex-grow: 2; */
+    /* word-wrap: break-word;  */
+    /* width: 40%; */
+}
+
+.about-box-2 > h1{
+    text-align: center;
+}
+
+.about-box-3{
+    order:3;
+    /* flex-grow: 5; */
+}
+
+/* Education */
+#education{
+    height: 87vh;
+    background-color: rgba(97, 97, 97);
+    color: white;
+    position: relative;
+}
+
+.schools{
+    height: 150px;
+    width: 50%;
+    display: block;
+    border-radius: 100%;
+    margin-left: 15%;
+    /* margin-right: auto; */
+}
+
+.flex-container-education{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.education-box-1{
+    margin-left: 5%;
+    width: 30%;
+    height: 30%;
+    order: 1;
+}
+
+.education-box-2{
+    width: 30%;
+    height: 30%;
+    order: 2
+}   
+
+.education-box-3{
+    width: 30%;
+    height: 30%;
+    order: 3
+}
+
+#education > h1{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Skills */
+
+#skills-languages{
+    width: 100%;
+    height: 87vh;
+    background-color: rgba(147, 147,147);
+    position: relative;
+}
+
+#skills-languages-container{
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+
+.skills-languages-box-1{
+    order: 1;
+    width: 30%;
+    height: 50%;
+}
+
+.skills-languages-box-2{
+    order: 2;
+    width: 30%;
+    height: 50%;
+}
+
+.skills-languages-list{
+    list-style-type: disc;
+}
+
+/* Project */
+#projects{
+    width: 100%;
+    height: 87vh;
+    background-color: rgba(170, 170,170);
+}
+
+#project-preview{
+    position: relative;
+    width: 70%;
+    height: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#projects button{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+#projects > h2{
+    margin-top: 0;
+    position: relative;
+    top: 5%;
+    text-align: center
+}
+
+.flex-container-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-box-1{
+}
+
+.projects-box-2{
+    text-align: center;
+    width: 40%;
+}
+
+.projects-box-3{
+    
+}
+
+
+/* footer */
+footer{
+    background-color: #CDCDCD;
+    height: 200px;
+    text-align: center;
+    padding-top: 0px;
+    width: 100%;
+}
+
+#logos{
+    position: relative;
+    top: 10px;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 100px; */
+}
+
+#my-logo-footer{
+    height: 100px;
+    width: auto;
+    text-align: center;
+}
+
+/* Mobile view */
+
+@media (max-width: 875px){
+    .active{
+        margin-top: 70px;
+        display: block;
+        /* margin-bottom: 70px; */
+    }
+
+    ul{
+        display: none;
+    }
+
+    ul li{
+        display: block;
+        padding: 10px;
+        border-width: 5px;
+        box-sizing: border-box;
+        border-color: white;
+    }
+
+    li a{
+        font-size: 10px;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+
+    #sections > section{
+        /* height:50vh; */
+        overflow: hidden;
+    }
+
+    #sections{
+        padding-top: 65px;
+    }
+
+
+    nav{
+    }
+
+
+}
