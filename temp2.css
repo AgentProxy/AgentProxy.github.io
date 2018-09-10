@@ -99,11 +99,11 @@ nav{
     text-align: center;
     color: white;
     display: block;
-    background-image: url("resources/images/me-intro2.jpg");
+    background-image: url("resources/images/me-intro4.jpg");
     background-color: black;
     background-size: 100vw 100vh;
     background-repeat: no-repeat; 
-    background-position: center ;
+    background-position: center bottom;
     background-attachment: scroll;
     position: relative;
 }
