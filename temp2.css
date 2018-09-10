@@ -101,7 +101,7 @@ nav{
     display: block;
     background-image: url("resources/images/me-intro4.jpg");
     background-color: black;
-    background-size: 100vw 100vh;
+    background-size: 100vw 100%;
     background-repeat: no-repeat; 
     background-position: center bottom;
     background-attachment: scroll;
@@ -374,14 +374,15 @@ footer{
 /* Mobile view */
 
 @media (max-width: 875px){
-    .active{
-        margin-top: 70px;
-        display: block;
-        /* margin-bottom: 70px; */
-    }
+   
 
     #nav-links{
         display: none;
+    }
+
+    .active{
+        margin-top: 70px;
+        display: block;
     }
 
     #nav-links li{

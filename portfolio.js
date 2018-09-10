@@ -1,18 +1,16 @@
 let currentIndex = 0;
 var views = {
     showMenu: function(){
-        // var ul = document.getElementById('nav-links');
         var menu = document.getElementById('nav-links');
         var sections = document.getElementById('sections');
         
-        
         if (menu.className === "passive") {
             menu.className = "active";
-            // sections.style.paddingTop = "260px";
+            menu.style.display = "block";
+            menu.style.marginTop = "70px";
         } else {
+            menu.style.display = "none";
             menu.className = "passive";
-            
-            // sections.style.paddingTop = "65px";
         }
     },
     setupEventListeners: function(){
