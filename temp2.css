@@ -4,9 +4,25 @@ body{
 }
 
 p{
-    font-size: 1.3vw;
+    font-size: 1.4vw;
 }
 
+h1{
+    font-family: 'Contrail One';
+    font-size: 2vw;
+}
+
+h2{
+    font-size: 1.7vw;
+}
+
+h3{
+    font-size: 1.5vw;
+}
+
+img{
+    max-width: 100%;
+}
 
 .body-box-1{
     order:1;
@@ -89,7 +105,6 @@ nav{
     background-repeat: no-repeat; 
     background-position: center ;
     background-attachment: scroll;
-    /* background-size: 100%; */
     position: relative;
 }
 
@@ -108,7 +123,6 @@ nav{
     position: absolute;
     top: 20%;
     left: 60%;
-    /* float: right; */
 }
 
 #intro > h1{
@@ -128,9 +142,6 @@ nav{
 #about-me > h1{
     position: absolute;
     top: 30%;
-    /* left: 60%;
-    margin:0; */
-    /* right: 50%; */
 
 }
 
@@ -155,7 +166,6 @@ nav{
 
 .about-box-1{
     order: 1;
-    /* flex-grow: 3; */
     width: 40%;
     margin-left: 5%;
 }
@@ -187,7 +197,6 @@ nav{
     display: block;
     border-radius: 100%;
     margin-left: 15%;
-    /* margin-right: auto; */
 }
 
 .flex-container-education{
@@ -197,7 +206,6 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    /* align-content: center; */
 }
 
 .education-box-1{
@@ -231,7 +239,9 @@ nav{
 #skills-languages{
     width: 100%;
     height: 87vh;
-    background-color: rgba(147, 147,147);
+    background-image: url("resources/images/skills.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     position: relative;
 }
 
@@ -248,17 +258,34 @@ nav{
 .skills-languages-box-1{
     order: 1;
     width: 30%;
-    height: 50%;
+    height:300px;
+    border-radius: 5%;
+    border: 5px solid black;
+    background: rgb(241, 241, 241);
+    position: relative;
 }
 
 .skills-languages-box-2{
     order: 2;
     width: 30%;
-    height: 50%;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 5%;
+    background: rgb(241, 241, 241);
+    position: relative;
 }
 
 .skills-languages-list{
     list-style-type: disc;
+    display: block;
+}
+
+.skills-languages-list > li{
+    font-size: 1.3vw;
+}
+
+.skills-languages-box-1 >h1, .skills-languages-box-2 > h1{
+    text-align: center;
 }
 
 /* Project */
@@ -266,6 +293,10 @@ nav{
     width: 100%;
     height: 87vh;
     background-color: rgba(170, 170,170);
+}
+
+#project-description{
+    /* margin-top: -5%; */
 }
 
 #project-preview{
@@ -282,10 +313,10 @@ nav{
     width: 50px;
 }
 
-#projects > h2{
+#projects > h1{
     margin-top: 0;
     position: relative;
-    top: 5%;
+    top: 2%;
     text-align: center
 }
 
@@ -317,15 +348,21 @@ footer{
     width: 100%;
 }
 
+#contact > span{
+    margin-right: 5%;
+    font-size: 1.4vw;
+    font-weight: bolder;
+}
+
 #logos{
     position: relative;
     top: 10px;
+    padding-bottom: 2%;
 }
 
 .logo{
     width: 30px;
     height: 30px;
-    /* margin-left: 100px; */
 }
 
 #my-logo-footer{
@@ -343,11 +380,11 @@ footer{
         /* margin-bottom: 70px; */
     }
 
-    ul{
+    #nav-links{
         display: none;
     }
 
-    ul li{
+    #nav-links li{
         display: block;
         padding: 10px;
         border-width: 5px;
@@ -355,7 +392,7 @@ footer{
         border-color: white;
     }
 
-    li a{
+    #nav-links li a{
         font-size: 10px;
     }
 
@@ -364,7 +401,7 @@ footer{
     }
 
     #sections > section{
-        /* height:50vh; */
+        height:100%;
         overflow: hidden;
     }
 
@@ -373,7 +410,12 @@ footer{
     }
 
 
-    nav{
+    .skills-languages-box-1{
+        height: 80%;
+    }
+
+    .skills-languages-box-2{
+        height: 80%;
     }
 
 

@@ -1,8 +1,8 @@
 let currentIndex = 0;
 var views = {
     showMenu: function(){
-        var ul = document.getElementById('nav-links')
-        var menu = document.querySelector(ul);
+        // var ul = document.getElementById('nav-links');
+        var menu = document.getElementById('nav-links');
         var sections = document.getElementById('sections');
         
         
@@ -59,41 +59,46 @@ var views = {
 
 var projects = [
     {
+        name: "Drunk Dave",
+        dateCreated: "2015",
+        status: "Local",
+        language: "Java",
+        description: "A Java game created with Nuj Valaquio, Aya Somil, and Justin Madriaga. Drunk Dave should avoid cars in the highway and must not get hit.",
+        url:"resources/images/drunkdave.jpg",
+    },
+    {
         name: "Tiyangge Dash",
         dateCreated: "2016",
         status: "Local",
         language: "Java",
-        description: "A Java game created for the utility of array structures.",
+        description: "A Java game created for the utility of array structures. It is similar to the popular game 'Diner Dash'",
         url:"resources/images/tiyanggedash.jpg",
-    },
-    {
-        name: "King's Cup",
-        dateCreated: "2015",
-        status: "Local",
-        language: "C",
-        description: "A terminal-based game that was made to mimic the King's Cup drinking game without the cards."
     },
     {
         name: 'Grinding Gary',
         dateCreated: '2017-1-2',
-        status: "Deployed",
+        status: "Deployed (http://grindinggary.000webhostapp.com/)",
         language: "Javascript, HTML5, Bootstrap, Jquery",
-        url: "http://grindinggary.000webhostapp.com/",
+        url: "resources/images/grindinggary.png",
         description: "It is a Javascript-based game that was created for a project in college. It was created together with Nuj Valaquio."
     },
     {
         name: 'PCPPI Careers',
         dateCreated: '2017-1-2',
-        status: "Deployed",
+        status: "Local",
         language: "Laravel, PHP, HTML, JQuery, Bootstrap",
-        url: "",
+        url: "resources/images/pcppi.png",
         description: "It is a website created during my OJT days in Pepsi."
-    } 
-    //drunk dave
+    } ,
+    {
+        name: 'Ball Time',
+        dateCreated: '2018',
+        status: "Local",
+        language: "AngularJS, Ionic, Google Firebase, Google Maps",
+        url: "resources/images/balltime.jpg",
+        description: "My thesis in college. It is a mobile app that helps basketball player find and join hosted basketball courts and play against others"
+    }
     
-    //Ball Time
-    //Orgy
-    //TIJEC
 ];
 
 
